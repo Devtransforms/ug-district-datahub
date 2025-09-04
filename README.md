@@ -24,10 +24,17 @@ Also, make sure the following secrets are set up in Github under the repo for co
 
 | Name         | Description     |
 |--------------|-----------|
-| DEV_HOST | IP address of server where the dashboard will be deployed |
-| DEV_USER| Username that will be used to log into the server |
-| KEY | SSH Key to be used - preferably RSA format as it's supported by most Linux distros out of the box |
-| PORT | SSH port |
+| KAYUNGA_HOST | IP address of server where the dashboard will be deployed |
+| KAYUNGA_USERNAME| Username that will be used to log into the server |
+| KAYUNGA_KEY | SSH Key to be used - preferably RSA format as it's supported by most Linux distros out of the box |
+| KAYUNGA_PORT | SSH port |
+| KAYUNGA_PASSPHRASE | Passphrase for Kayunga key |
+| MASINDI_HOST | Host (IP address) for Masindi server |
+| MASINDI_KEY | SSH Key for Masindi server |
+| MASINDI_PASSPHRASE | Passphrase for Masindi Server |
+| MASINDI_PORT | SSH port for Masindi Server |
+| MASINDI_USERNAME | User name for Masindi server |
+
 
 We advise against using the root user to run the deployment. Set up a second user that will be used to run the update. Make sure the second user has permissions to spin up docker containers. Refer to the third option listed here - https://phoenixnap.com/kb/docker-permission-denied. Also, use nvm to install node `>=16 <17`.
 
